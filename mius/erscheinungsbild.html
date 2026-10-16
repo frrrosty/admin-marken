@@ -790,7 +790,7 @@ td.mass{font-variant-numeric:tabular-nums}
   <section id="elemente">
     <div class="kap-kopf"><span class="nr">06</span><h2>Gestaltungselemente</h2></div>
     <div class="text">
-      <p>Alle Elemente stammen aus der Konstruktion des Signets. Sie zitieren es, ohne es nachzubauen; das Logo selbst wird nie zerschnitten oder als Muster wiederholt.</p>
+      <p>Alle Elemente stammen aus der Konstruktion des Signets. Sie zitieren es, ohne es nachzubauen; das Logo selbst wird nie zerschnitten oder als Muster wiederholt. Einzige Ausnahme ist der Aufbau im Kopfbild der Website (Kapitel 10).</p>
     </div>
     <div class="raster r2 block">
       <div class="element" style="grid-column:1/-1">
@@ -881,7 +881,10 @@ td.mass{font-variant-numeric:tabular-nums}
   <!-- 08 -->
   <section id="bewegung">
     <div class="kap-kopf"><span class="nr">10</span><h2>Bewegung</h2></div>
-    <div class="text"><p>Für Video-Intro, Folienübergänge und Website gilt eine einzige Bewegung: Das Signet baut sich so auf, wie man es liest. Erst der Tunnel, dann Balken für Balken von vorn nach hinten, je 90 ms versetzt, jeder in 420 ms ausrollend. Nichts dreht, springt oder federt. Das ganze Intro dauert unter zwei Sekunden. Wer in den Systemeinstellungen reduzierte Bewegung gewählt hat, sieht das Signet sofort.</p></div>
+    <div class="text"><p>Es gibt eine einzige Bewegung: Das Signet baut sich so auf, wie man es liest. Erst der Tunnel, dann Balken für Balken von vorn nach hinten. Jedes Teil gleitet entlang der Neigung von 21° an seinen Platz. Nichts dreht, springt oder federt.</p>
+<p><strong>Als Intro</strong> für Video und Folienübergänge: je 90 ms versetzt, jedes Teil in 420 ms ausrollend, zusammen unter zwei Sekunden.</p>
+<p><strong>Auf der Website</strong> folgt der Aufbau dem Scrollen. Im Kopfbild liegen die elf Flächen zuerst wie in einer Explosionszeichnung entlang der Neigung auseinander und setzen sich in derselben Reihenfolge zusammen, während man scrollt. Danach steht das Signet still, und Tunnel, M, I, U und S erscheinen beschriftet. Das ist der einzige Ort, an dem das Signet in seinen Teilen gezeigt wird.</p>
+<p>Wer in den Systemeinstellungen reduzierte Bewegung gewählt hat, sieht das Signet in beiden Fällen sofort fertig.</p></div>
     <div class="bewegung block" id="bewegung-demo">
       <svg viewBox="0 0 1060 912" role="img" aria-label="Signet, das sich Balken für Balken aufbaut">
         <path class="t" style="--i:0" fill="#3F5F00" d="M0 112 286 1 286 75 69 159 69 753 286 837 286 911 0 799Z"/>
@@ -1139,7 +1142,7 @@ td.mass{font-variant-numeric:tabular-nums}
         <thead><tr><th>Was</th><th>Stand</th><th>Nächster Schritt</th></tr></thead>
         <tbody>
           <tr><td>Einzige Quelle</td><td>erledigt: frrrosty/admin-marken; die Website holt Signet, Favicon und Farben beim Bauen von dort</td><td>–</td></tr>
-          <tr><td>Veröffentlichung auf Hostpoint</td><td>vorbereitet: GitHub Action baut und lädt per FTPS hoch</td><td>Zugangsdaten als Secrets im Repository mius-website eintragen</td></tr>
+          <tr><td>Veröffentlichung auf Hostpoint</td><td>erledigt: Upload per SSH mit <span class="mono">plattform/hochladen.py</span>, Vorschau auf neu.mius.ch</td><td>Umzug von WordPress auf mius.ch entscheiden</td></tr>
           <tr><td>Fehlerhafte SVGs der Website</td><td>erledigt</td><td>–</td></tr>
           <tr><td>Logo-Paket</td><td>erledigt: 8 Fassungen als SVG, PNG und PDF, Schrift in Pfade umgewandelt</td><td>–</td></tr>
           <tr><td>Schriften</td><td>erledigt: 10 statische Schnitte mit Lizenz</td><td>auf dem eigenen Rechner installieren</td></tr>
@@ -1153,7 +1156,7 @@ td.mass{font-variant-numeric:tabular-nums}
           <tr><td>Druckdaten</td><td>erste Fassung in RGB: Visitenkarte, Sticker rund und QR, Namensschilder</td><td>Andruck, danach CMYK-Werte festlegen</td></tr>
           <tr><td>Telefonnummer</td><td>offen</td><td>entscheiden, ob sie auf die Visitenkarte kommt</td></tr>
           <tr><td>Canva Brand Kit</td><td>offen</td><td>Die Verbindung zu Canva war nicht verfügbar; Farben und Schriften liegen bereit</td></tr>
-          <tr><td>Originaldatei des Logos</td><td>offen</td><td>suchen; sonst gilt die Nachzeichnung als Master</td></tr>
+          <tr><td>Originaldatei des Logos</td><td>gefunden: <span class="mono">00_Original/logo_design_v3.pptx</span>, Folie 2, elf Freihandformen in den Logofarben</td><td>– (die Nachzeichnung deckt sich bis auf eine Einheit; siehe Kapitel 17)</td></tr>
           <tr><td>Porträtfotos</td><td>offen</td><td>Fotoshooting, zwei Fassungen</td></tr>
           <tr><td>Fotos der Werkstücke</td><td>offen</td><td>für den Portfolio-Charakter der Website</td></tr>
           <tr><td>Rollup, Video-Intro, Bauchbinde</td><td>bei Bedarf</td><td>wenn ein Anlass ansteht</td></tr>
@@ -1173,7 +1176,7 @@ td.mass{font-variant-numeric:tabular-nums}
           <tr><td>Grundton der Werbemittel</td><td>Dunkel, Tiefton #001313</td><td>Die Palette ist nach dunkel gebaut und trägt dort ohne Kompromisse. Die Website bleibt hell mit dunklem Kopf, so wie sie jetzt gebaut ist.</td></tr>
           <tr><td>QR-Sticker</td><td>Neu auflegen</td><td>Der heutige Sticker verdeckt das Signet. Restbestand aufbrauchen ist vertretbar, nachdrucken nicht.</td></tr>
           <tr><td>Helles Oliv</td><td>Nur Markierfarbe auf dunkel</td><td>Im Logo nicht vorhanden. Wer es nicht vermisst, streicht es.</td></tr>
-          <tr><td>Master-Datei</td><td>Originaldatei suchen</td><td>Existiert die Datei aus dem Zeichenprogramm noch, bleibt sie der Master. Sonst wird die Nachzeichnung aus 11 Flächen zum Master und ersetzt die fehlerhafte Vektordatei im Repo.</td></tr>
+          <tr><td>Master-Datei</td><td>Nachzeichnung bleibt Master, PowerPoint ist der Beleg</td><td>Die Originaldatei ist gefunden (PowerPoint, elf Formen). Die Nachzeichnung deckt sich damit im Mittel auf 1 Einheit bei 1060 Breite. Nur zwei Ecken des Tunnels am ersten Balken weichen um rund 10 Einheiten ab, weil die Kante im Original leicht schief gezeichnet ist. Die gerade Konstruktion bleibt deshalb Grundlage aller Dateien; das Original liegt in <span class="mono">00_Original/</span>.</td></tr>
           <tr><td>Druckfarben</td><td>Andruck bei der Druckerei</td><td>Rahmen und Tiefton liegen beide nahe Schwarz. Ohne Andruck ist nicht sicher, dass die Tiefenstaffelung im Druck sichtbar bleibt.</td></tr>
         </tbody>
       </table>
