@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Tunnel",
+    "hex": "#141E00",
+    "rgb": [
+      20,
+      30,
+      0
+    ],
+    "gruppe": "Logo"
+  },
+  {
+    "name": "Balken",
+    "hex": "#117011",
+    "rgb": [
+      17,
+      112,
+      17
+    ],
+    "gruppe": "Logo"
+  },
+  {
+    "name": "Gelenk",
+    "hex": "#2B8F2B",
+    "rgb": [
+      43,
+      143,
+      43
+    ],
+    "gruppe": "Logo"
+  },
+  {
+    "name": "Fundament",
+    "hex": "#003D3D",
+    "rgb": [
+      0,
+      61,
+      61
+    ],
+    "gruppe": "Logo"
+  },
+  {
+    "name": "Tiefton",
+    "hex": "#001313",
+    "rgb": [
+      0,
+      19,
+      19
+    ],
+    "gruppe": "Logo"
+  },
+  {
+    "name": "Gruen hell (negativ)",
+    "hex": "#36B436",
+    "rgb": [
+      54,
+      180,
+      54
+    ],
+    "gruppe": "Erweiterung"
+  },
+  {
+    "name": "Teal hell (negativ)",
+    "hex": "#298888",
+    "rgb": [
+      41,
+      136,
+      136
+    ],
+    "gruppe": "Erweiterung"
+  },
+  {
+    "name": "Teal",
+    "hex": "#206B6B",
+    "rgb": [
+      32,
+      107,
+      107
+    ],
+    "gruppe": "Erweiterung"
+  },
+  {
+    "name": "Tunnel negativ",
+    "hex": "#3F5F00",
+    "rgb": [
+      63,
+      95,
+      0
+    ],
+    "gruppe": "Erweiterung"
+  },
+  {
+    "name": "Oliv Markierfarbe",
+    "hex": "#80A732",
+    "rgb": [
+      128,
+      167,
+      50
+    ],
+    "gruppe": "Erweiterung"
+  },
+  {
+    "name": "Grund hell",
+    "hex": "#FCFDFC",
+    "rgb": [
+      252,
+      253,
+      252
+    ],
+    "gruppe": "Neutral"
+  },
+  {
+    "name": "Flaeche",
+    "hex": "#ECEEEC",
+    "rgb": [
+      236,
+      238,
+      236
+    ],
+    "gruppe": "Neutral"
+  },
+  {
+    "name": "Linie",
+    "hex": "#D9DDDA",
+    "rgb": [
+      217,
+      221,
+      218
+    ],
+    "gruppe": "Neutral"
+  },
+  {
+    "name": "Text leise",
+    "hex": "#526053",
+    "rgb": [
+      82,
+      96,
+      83
+    ],
+    "gruppe": "Neutral"
+  },
+  {
+    "name": "Text",
+    "hex": "#141A15",
+    "rgb": [
+      20,
+      26,
+      21
+    ],
+    "gruppe": "Neutral"
+  },
+  {
+    "name": "Grund dunkel",
+    "hex": "#0B0F0B",
+    "rgb": [
+      11,
+      15,
+      11
+    ],
+    "gruppe": "Neutral"
+  }
+]

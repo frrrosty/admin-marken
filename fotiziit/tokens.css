@@ -1,0 +1,49 @@
+/* Fotiziit – erzeugt aus tokens.json. Dunkel ist das Grundthema, Papier für Druck und Dokumente. */
+:root {
+  --ground: #0B0A08;
+  --surface: #13110E;
+  --surface-raised: #1C1915;
+  --ink: #F2EDE4;
+  --ink-2: #E7E0D3;
+  --ink-muted: #A39C90;
+  --ink-dim: #6F695F;
+  --line: #2A2620;
+  --brass: #D9A560;
+  --brass-text: #F0C88E;
+  --on-brass: #0B0A08;
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --font-logo: "Archivo", sans-serif;
+  --display-xl: 400 88px/88px var(--font-display);
+  --display-l: 400 46px/50px var(--font-display);
+  --display-m: 400 28px/32px var(--font-display);
+  --lead: 400 19px/30px var(--font-sans);
+  --body: 400 16px/26px var(--font-sans);
+  --small: 400 14px/22px var(--font-sans);
+  --data: 400 12px/18px var(--font-mono);
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-14: 56px;
+  --radius-none: 0px;
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-signet: 22%;
+}
+[data-theme="papier"], .papier {
+  --ground: #F2EDE4;
+  --surface: #E9E3D8;
+  --surface-raised: #DED6C8;
+  --ink: #0B0A08;
+  --ink-2: #2A2620;
+  --ink-muted: #625C53;
+  --ink-dim: #7E7668;
+  --line: #CFC6B6;
+  --brass: #A8752F;
+  --brass-text: #8A5E22;
+  --on-brass: #0B0A08;
+}

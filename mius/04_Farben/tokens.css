@@ -1,0 +1,148 @@
+/* ---------------------------------------------------------------
+   MIUS – Gestaltungsraster
+   Farbwerte der Marke, ergaenzt um Neutrale und Rollen.
+   Stand 25.08.2026. Alle Kontrastwerte nach WCAG 2.1 nachgerechnet.
+   --------------------------------------------------------------- */
+
+:root {
+  /* --- Marke: Primaer (Gruen) -------------------------------- */
+  /* Die Farbe des Logo-Signets. Auf Weiss nur 4,14:1 – als
+     Textfarbe zu schwach, als Flaeche stark. Fuer Text auf hellem
+     Grund gruen-600 nehmen. */
+  --gruen-400: #2B8F2B;   /* Logo-Ton. Flaechen, grosse Schrift    */
+  --gruen-500: #36B436;   /* aufgehellt: Text auf dunklem Grund    */
+  --gruen-600: #117011;   /* 6,27:1 auf Weiss – Text, Links        */
+  --gruen-700: #005100;   /* 9,65:1                                */
+  --gruen-800: #003400;
+  --gruen-900: #001900;
+
+  /* --- Marke: Sekundaer 1 (Teal) ------------------------------ */
+  --teal-400:  #298888;   /* aufgehellt: Text auf dunklem Grund    */
+  --teal-500:  #206B6B;   /* 6,22:1 auf Weiss – Text ok            */
+  --teal-600:  #0D5454;   /* 8,70:1                                */
+  --teal-700:  #003D3D;
+  --teal-800:  #002727;
+  --teal-900:  #001313;
+
+  /* --- Marke: Sekundaer 2 (Oliv) ------------------------------ */
+  /* Achtung: oliv-400 hat auf Weiss nur 2,80:1. Niemals Text.
+     Auf dunklem Grund dagegen 6,89:1 – dort die staerkste Farbe. */
+  --oliv-400:  #80A732;   /* Flaechen, Grafik, Text auf dunkel     */
+  --oliv-500:  #5E8314;   /* 4,44:1 – knapp unter AA, nur gross    */
+  --oliv-600:  #3F5F00;   /* 7,37:1 – Text ok                      */
+  --oliv-700:  #283C00;
+  --oliv-800:  #141E00;
+
+  /* --- Neutrale ------------------------------------------------ */
+  /* Leichter Gruenstich (H 125), damit die Graustufen zur Marke
+     gehoeren, ohne als Farbe gelesen zu werden. */
+  --n-0:   #FCFDFC;
+  --n-50:  #F6F6F6;
+  --n-100: #ECEEEC;
+  --n-200: #D9DDDA;
+  --n-300: #BBC3BC;
+  --n-400: #939F94;
+  --n-500: #6D7E6E;
+  --n-600: #526053;
+  --n-700: #3A453B;
+  --n-800: #252D25;
+  --n-900: #141A15;
+  --n-950: #0B0F0B;
+
+  /* --- Rollen: helles Thema ----------------------------------- */
+  --grund:          var(--n-0);
+  --grund-erhoben:  #FFFFFF;
+  --grund-gedaempft:var(--n-50);
+  --text:           var(--n-900);   /* 17,3:1 */
+  --text-leise:     var(--n-600);   /*  6,5:1 */
+  --text-invers:    var(--n-0);
+  --linie:          var(--n-200);
+  --linie-stark:    var(--n-300);
+  --akzent:         var(--gruen-600);
+  --akzent-flaeche: var(--gruen-400);
+  --akzent-2:       var(--teal-500);
+  --akzent-3:       var(--oliv-600);
+  --fokus:          var(--teal-500);
+
+  /* --- Typografie ---------------------------------------------- */
+  /* Josefin Sans steht ausschliesslich im Logo-Lockup – gedruckt
+     und daher gesetzt. Fuer Lauftext ist der ExtraLight-Schnitt
+     zu duenn, deshalb hier zwei eigene Schriften. */
+  --schrift-display: "Archivo", "Segoe UI", system-ui, sans-serif;
+  --schrift-text:    "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --schrift-mono:    "JetBrains Mono", ui-monospace, monospace;
+
+  /* Skala im Verhaeltnis 1,25 (grosse Terz) */
+  --t-xs:   0.80rem;
+  --t-s:    0.9rem;
+  --t-m:    1rem;
+  --t-l:    1.25rem;
+  --t-xl:   1.563rem;
+  --t-2xl:  1.953rem;
+  --t-3xl:  2.441rem;
+  --t-4xl:  3.052rem;
+  --t-5xl:  3.815rem;
+
+  --zeile-eng:   1.15;   /* Ueberschriften   */
+  --zeile-normal:1.6;    /* Fliesstext       */
+  --zeile-weit:  1.75;   /* lange Textstellen*/
+
+  /* --- Raster --------------------------------------------------- */
+  --r-1: 0.25rem;  --r-2: 0.5rem;  --r-3: 0.75rem;  --r-4: 1rem;
+  --r-6: 1.5rem;   --r-8: 2rem;    --r-12: 3rem;    --r-16: 4rem;
+  --r-24: 6rem;    --r-32: 8rem;
+
+  --breite-text:  68ch;   /* Lesebreite Fliesstext */
+  --breite-seite: 1200px;
+
+  --rund-s: 2px;   --rund-m: 4px;   --rund-l: 8px;
+  /* Das Logo ist streng kantig gebaut. Runde Ecken bleiben knapp,
+     sonst arbeitet die Oberflaeche gegen die Marke. */
+
+  --schatten-s: 0 1px 2px rgb(11 15 11 / 0.06);
+  --schatten-m: 0 2px 8px rgb(11 15 11 / 0.08);
+  --schatten-l: 0 8px 24px rgb(11 15 11 / 0.10);
+}
+
+/* --- Rollen: dunkles Thema ------------------------------------- */
+/* Die Marken-Palette laeuft nur nach dunkel, hat also von Haus aus
+   keine hellen Toene. Auf dunklem Grund tragen darum die 400er. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --grund:          var(--n-950);
+    --grund-erhoben:  var(--n-900);
+    --grund-gedaempft:#070A07;
+    --text:           var(--n-100);   /* 16,6:1 */
+    --text-leise:     var(--n-400);   /*  7,0:1 */
+    --text-invers:    var(--n-950);
+    --linie:          var(--n-800);
+    --linie-stark:    var(--n-700);
+    --akzent:         var(--gruen-500);   /* 7,1:1 */
+    --akzent-flaeche: var(--gruen-400);
+    --akzent-2:       var(--teal-400);    /* 4,6:1 */
+    --akzent-3:       var(--oliv-400);    /* 6,9:1 */
+    --fokus:          var(--teal-400);
+    --schatten-s: 0 1px 2px rgb(0 0 0 / 0.4);
+    --schatten-m: 0 2px 8px rgb(0 0 0 / 0.5);
+    --schatten-l: 0 8px 24px rgb(0 0 0 / 0.6);
+  }
+}
+
+:root[data-theme="dark"] {
+  --grund:          var(--n-950);
+  --grund-erhoben:  var(--n-900);
+  --grund-gedaempft:#070A07;
+  --text:           var(--n-100);
+  --text-leise:     var(--n-400);
+  --text-invers:    var(--n-950);
+  --linie:          var(--n-800);
+  --linie-stark:    var(--n-700);
+  --akzent:         var(--gruen-500);
+  --akzent-flaeche: var(--gruen-400);
+  --akzent-2:       var(--teal-400);
+  --akzent-3:       var(--oliv-400);
+  --fokus:          var(--teal-400);
+  --schatten-s: 0 1px 2px rgb(0 0 0 / 0.4);
+  --schatten-m: 0 2px 8px rgb(0 0 0 / 0.5);
+  --schatten-l: 0 8px 24px rgb(0 0 0 / 0.6);
+}

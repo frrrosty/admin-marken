@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="30mm" height="30mm">
+<title>FOTIZIIT – Bildzeichen</title>
+<circle id="grund" cx="50" cy="50" r="50" fill="#1C1915"></circle>
+<path id="blende" fill="#F2EDE4" d="M53.63 32.84L69.73 23.55A33 33 0 0 1 83 49.8ZM36.95 38.28L36.95 19.69A33 33 0 0 1 66.32 21.32ZM33.32 55.44L17.23 46.14A33 33 0 0 1 33.32 21.52ZM46.37 67.16L30.27 76.45A33 33 0 0 1 17 50.2ZM63.05 61.72L63.05 80.31A33 33 0 0 1 33.68 78.68ZM66.68 44.56L82.77 53.86A33 33 0 0 1 66.68 78.48Z"></path>
+<path id="pause" fill="#D9A560" d="M40.5 40.5h6v19h-6zM53.5 40.5h6v19h-6z"></path>
+</svg>

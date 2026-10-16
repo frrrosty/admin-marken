@@ -1,0 +1,20 @@
+GIMP Palette
+Name: MIUS
+Columns: 5
+#
+ 20  30   0	Tunnel
+ 17 112  17	Balken
+ 43 143  43	Gelenk
+  0  61  61	Fundament
+  0  19  19	Tiefton
+ 54 180  54	Gruen hell (negativ)
+ 41 136 136	Teal hell (negativ)
+ 32 107 107	Teal
+ 63  95   0	Tunnel negativ
+128 167  50	Oliv Markierfarbe
+252 253 252	Grund hell
+236 238 236	Flaeche
+217 221 218	Linie
+ 82  96  83	Text leise
+ 20  26  21	Text
+ 11  15  11	Grund dunkel
