@@ -27,22 +27,43 @@ von Samuel Müller, Ermatingen. Das vollständige Regelwerk steht in
 ## Dateien
 
 ```
+00_Original/    alte Logodateien als Beleg, nicht verwenden
 01_Logo/        8 Fassungen als SVG, PNG und PDF
-  web/          Favicon, App-Symbol, Link-Vorschau
+  web/          Favicon, App-Symbol, Link-Vorschau, Signaturbild
 02_Schriften/   10 statische Schnitte mit Lizenz (OFL)
+  quelle/       variable Originale von Google Fonts (Quelle)
 03_Vorlagen/    Folienmaster, Word-Vorlagen, E-Mail-Signatur, Social Media
-04_Farben/      Farbfelder als ASE, GPL, JSON und CSS
+04_Farben/      tokens.css (Quelle), Farbfelder als ASE, GPL und JSON
 05_Druckdaten/  Visitenkarte, Sticker, Namensschilder (RGB, mit Beschnitt)
+quelle/         erzeugen.py und requirements.txt
 ```
 
 Dateinamen folgen dem Muster `mius_fassung_farbe.format`.
 
-## Herkunft und Aktualisierung
+## Quelle und erzeugte Dateien
 
-Alle Dateien erzeugt `marke/erzeugen.py` im Repository
-[frrrosty/mius-website](https://github.com/frrrosty/mius-website). Dort steht
-die Geometrie des Signets als Quelle. Nach einer Änderung dort neu erzeugen
-und den Ordner `marke/` hierher kopieren, damit beide Stände gleich bleiben.
+Dieser Ordner ist die einzige Quelle der Marke MIUS. Von Hand gepflegt werden
+nur drei Dinge:
+
+- `quelle/erzeugen.py` mit der Geometrie des Signets, den Fassungen und Vorlagen
+- `02_Schriften/quelle/` mit den Schriftdateien von Google Fonts
+- `04_Farben/tokens.css` mit allen Farb- und Masswerten
+
+Alles andere erzeugt das Skript:
+
+```
+pip install -r mius/quelle/requirements.txt
+python -m playwright install chromium
+python mius/quelle/erzeugen.py
+```
+
+Die erzeugten Dateien sind bewusst eingecheckt, damit sie ohne Skript bereitstehen.
+Bei jedem Push prüft eine GitHub Action, ob SVG, Schriften und Farbfelder zur
+Quelle passen. Eine von Hand geänderte Datei lässt die Prüfung fehlschlagen.
+
+Die Website mius.ch (Repository frrrosty/mius-website) bindet dieses
+Repository als Git-Submodul ein und kopiert Signet, Favicon, Link-Vorschau und
+`tokens.css` beim Bauen. Dort liegen keine eigenen Markendateien.
 
 ## Hinweise
 

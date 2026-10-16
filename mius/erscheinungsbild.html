@@ -1098,7 +1098,7 @@ td.mass{font-variant-numeric:tabular-nums}
   <!-- 10 -->
   <section id="paket">
     <div class="kap-kopf"><span class="nr">15</span><h2>Logo-Paket und Vorlagen</h2></div>
-    <div class="text"><p>Alle Dateien liegen an einem Ort, zum Beispiel im Ordner «MIUS Marke» mit den Unterordnern 01_Logo, 02_Schriften, 03_Vorlagen, 04_Farben und 05_Druckdaten. Im Repository liegt genau dieser Ordner unter <span class="mono">marke/</span>; der Befehl <span class="mono">python marke/erzeugen.py</span> erzeugt ihn jederzeit vollständig neu. Dateinamen klein, ohne Umlaute und Leerschläge, nach dem Muster <span class="mono">mius_fassung_farbe.format</span>. So findet man sie auch in drei Jahren noch, und Kolleginnen, Veranstalter oder Druckereien bekommen immer die richtige Datei.</p></div>
+    <div class="text"><p>Alle Dateien liegen an einem Ort, zum Beispiel im Ordner «MIUS Marke» mit den Unterordnern 01_Logo, 02_Schriften, 03_Vorlagen, 04_Farben und 05_Druckdaten. Dieser Ordner ist <span class="mono">mius/</span> im Repository frrrosty/admin-marken, der einzigen Quelle der Marke; <span class="mono">python mius/quelle/erzeugen.py</span> erzeugt ihn jederzeit vollständig neu. Die Website bindet das Repository als Git-Submodul ein und hat keine eigenen Markendateien. Dateinamen klein, ohne Umlaute und Leerschläge, nach dem Muster <span class="mono">mius_fassung_farbe.format</span>. So findet man sie auch in drei Jahren noch, und Kolleginnen, Veranstalter oder Druckereien bekommen immer die richtige Datei.</p></div>
     <div class="tab-huelle block">
       <table>
         <thead><tr><th>Datei</th><th>Formate</th><th>Wofür</th></tr></thead>
@@ -1133,11 +1133,13 @@ td.mass{font-variant-numeric:tabular-nums}
 
   <section id="fehlt">
     <div class="kap-kopf"><span class="nr">16</span><h2>Stand der Umsetzung</h2></div>
-    <div class="text"><p>Erste Fassung vom 15. Oktober 2026. Alles, was ohne dich ging, ist umgesetzt und liegt im Repository auf dem Branch <span class="mono">corporate-design</span>. Offen bleibt, was Fotos, Entscheide oder Zugänge braucht.</p></div>
+    <div class="text"><p>Erste Fassung vom 15. Oktober 2026. Alles, was ohne dich ging, ist umgesetzt. Einzige Quelle ist das Repository frrrosty/admin-marken, Ordner <span class="mono">mius/</span>. Offen bleibt, was Fotos, Entscheide oder Zugänge braucht.</p></div>
     <div class="tab-huelle block">
       <table>
         <thead><tr><th>Was</th><th>Stand</th><th>Nächster Schritt</th></tr></thead>
         <tbody>
+          <tr><td>Einzige Quelle</td><td>erledigt: frrrosty/admin-marken; die Website holt Signet, Favicon und Farben beim Bauen von dort</td><td>–</td></tr>
+          <tr><td>Veröffentlichung auf Hostpoint</td><td>vorbereitet: GitHub Action baut und lädt per FTPS hoch</td><td>Zugangsdaten als Secrets im Repository mius-website eintragen</td></tr>
           <tr><td>Fehlerhafte SVGs der Website</td><td>erledigt</td><td>–</td></tr>
           <tr><td>Logo-Paket</td><td>erledigt: 8 Fassungen als SVG, PNG und PDF, Schrift in Pfade umgewandelt</td><td>–</td></tr>
           <tr><td>Schriften</td><td>erledigt: 10 statische Schnitte mit Lizenz</td><td>auf dem eigenen Rechner installieren</td></tr>

@@ -1,0 +1,31 @@
+# Erzeugt das MIUS-Paket neu und prueft, ob die eingecheckten Dateien zur
+# Quelle passen. Schlaegt fehl, wenn eine erzeugte Datei von Hand geaendert
+# wurde, statt mius/quelle/erzeugen.py anzupassen.
+#
+# Geprueft werden die Dateien, die bytegenau reproduzierbar sind: SVG,
+# Schriften und Farbfelder. PNG, PDF und Office-Dateien enthalten Zeitstempel
+# oder Rendering-Unterschiede zwischen Browserversionen.
+name: MIUS-Paket prüfen
+
+on:
+  push:
+    paths: ['mius/**', '.github/workflows/mius-pruefen.yml']
+  pull_request:
+    paths: ['mius/**', '.github/workflows/mius-pruefen.yml']
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Abhängigkeiten
+        run: |
+          pip install -r mius/quelle/requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Paket erzeugen
+        run: python mius/quelle/erzeugen.py
+      - name: Erzeugte Dateien müssen zur Quelle passen
+        run: git diff --exit-code -- mius/01_Logo/svg mius/02_Schriften mius/04_Farben

@@ -24,6 +24,12 @@ git submodule update --remote marken   # später: neuesten Stand holen
 «Verwende das Erscheinungsbild von MIUS aus frrrosty/admin-marken». Die Datei
 `CLAUDE.md` in diesem Repository sagt, wo was liegt.
 
+## Quelle
+
+Dieses Repository ist die einzige Quelle beider Marken. Die Seiten auf
+claude.ai (Fotiziit-Design-System, MIUS-Handbuch) sind Ansichten und werden
+hier nicht nachgeführt, sondern bei Bedarf von hier aus neu veröffentlicht.
+
 ## Regeln für dieses Repository
 
 - Pro Marke ein Ordner in Kleinbuchstaben, ohne Umlaute.
